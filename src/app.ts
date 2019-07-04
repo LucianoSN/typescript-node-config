@@ -1,12 +1,16 @@
-import * as express from 'express'
-import * as cors from 'cors'
-import * as mongoose from 'mongoose'
+import express from 'express'
+import cors from 'cors'
+import mongoose from 'mongoose'
 
 class App {
 	public express: express.Application
 
 	public constructor () {
 		this.express = express()
+
+		this.middlewares()
+		this.database()
+		this.routes()
 	}
 
 	private middlewares (): void {
@@ -26,3 +30,5 @@ class App {
 		})
 	}
 }
+
+export default new App().express

@@ -18,15 +18,15 @@ module.exports = {
 		sourceType: 'module'
 	},
 	rules: {
+		indent: ['error', 'tab'],
 		'class-methods-use-this': 'off',
 		'no-param-reassign': 'off',
 		'no-console': 'off',
 		'linebreak-style': 0,
 		'no-tabs': 0,
-		indent: ['error', 'tab'],
 		'@typescript-eslint/indent': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/no-non-null-assertion': 'off',
 		'@typescript-eslint/no-use-before-define': 'off'
 	}
-}
+};
